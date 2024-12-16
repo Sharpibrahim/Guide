@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive HTML guide to mastering HTML">
+  <title>HTML Professional Guide</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    /* Header Styling */
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation Styling */
+    nav {
+      background: #ffd700;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #004aad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content Styling */
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #004aad;
+    }
+
+    code {
+      display: block;
+      background-color: #e3f2fd;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    pre {
+      background-color: #e3f2fd;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    /* Footer Styling */
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Professional Guide</h1>
+    <p>Learn everything you need to know about HTML</p>
+  </header>
+  <nav>
+    <a href="#html-basics">HTML Basics</a>
+    <a href="#html-elements">HTML Elements</a>
+    <a href="#html-forms">Forms</a>
+    <a href="#best-practices">Best Practices</a>
+    <a href="#resources">Resources</a>
+  </nav>
+  <main>
+    <section id="html-basics">
+      <h2>1. HTML Basics</h2>
+      <p><strong>What is HTML?</strong> HTML (HyperText Markup Language) is the standard markup language used to create web pages.</p>
+      <h3>Basic HTML Structure:</h3>
+      <pre>
+        <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Page content --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+      </pre>
+    </section>
+
+    <section id="html-elements">
+      <h2>2. Common HTML Elements</h2>
+      <h3>Headings:</h3>
+      <pre>
+        <code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+        </code>
+      </pre>
+      <h3>Paragraphs:</h3>
+      <pre>
+        <code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+        </code>
+      </pre>
+      <h3>Links:</h3>
+      <pre>
+        <code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+        </code>
+      </pre>
+      <h3>Images:</h3>
+      <pre>
+        <code>&lt;img src="image.jpg" alt="Description of the image"&gt;
+        </code>
+      </pre>
+
+      <h3>Lists:</h3>
+      <pre>
+        <code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+        </code>
+      </pre>
+
+      <h3>Tables:</h3>
+      <pre>
+        <code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Cell 1&lt;/td&gt;
+    &lt;td&gt;Cell 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </code>
+      </pre>
+    </section>
+
+    <section id="html-forms">
+      <h2>3. HTML Forms</h2>
+      <p>Forms allow you to collect user input:</p>
+      <pre>
+        <code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;&lt;br&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+        </code>
+      </pre>
+    </section>
+
+    <section id="best-practices">
+      <h2>4. HTML Best Practices</h2>
+      <ul>
+        <li>Use Semantic Elements for better structure and accessibility.</li>
+        <li>Validate your code with tools like the <a href="https://validator.w3.org/">W3C Validator</a>.</li>
+        <li>Optimize images to improve page loading times.</li>
+        <li>Use descriptive titles and meta tags for better SEO.</li>
+        <li>Keep your HTML well-organized, consistent, and properly indented.</li>
+      </ul>
+    </section>
+
+    <section id="resources">
+      <h2>5. Resources</h2>
+      <p>Here are some helpful resources to further enhance your HTML skills:</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+        <li><a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 HTML Professional Guide</p>
+  </footer>
+</body>
+</html>
